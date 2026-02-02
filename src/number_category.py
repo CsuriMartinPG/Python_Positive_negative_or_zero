@@ -1,3 +1,5 @@
+
+
 """
 Production code - This is the application code that we are testing.
 This module contains the business logic for categorizing numbers.
@@ -21,5 +23,13 @@ def categorize_number(number):
         categorize_number(-3) -> "Negatív"
         categorize_number(0) -> "Nulla"
     """
-    # TODO: Írd meg az implementációt!
-    pass
+
+    num = float(number)
+    
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"
+        # TODO: Írd meg az implementációt!
